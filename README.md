@@ -23,5 +23,6 @@ I've also written simple functions for Compressor, Delay, and Equlizer. You can 
 
 In the project I also provided three real time scripts for sound design, reading midi files and actually writing a song. You can refer to them to write your own music.
 
-Have fun!
-And feel free to contact me!
+##### Have fun!
+##### And feel free to contact me! <lity78@mail2.sysu.edu.cn>
+
