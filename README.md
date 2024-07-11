@@ -16,7 +16,7 @@ This may require a bit of thinking about the relationship between time and beat,
         ctime=cumsum(deltatime); % cumulative time per tick
 
 ## 4. Inserting notes into a piece of music
-The `soundTrack` function makes it easy and quick to insert notes into the timeline, provided you have done all the previous preparations.
+The `soundTrack` function makes it easy and quick to insert notes into the timeline, provided you have done all the previous preparations. You can also use an external audio source, which should be stored in cells if pitches change.
 
 ## 5. Mixing and effects
 I've also written simple functions for `Compressor`, `Delay`, and `Equlizer`. You can also use the more advanced functions of the Signal Processing Toolbox to make the sound fuller.
