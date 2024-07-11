@@ -2,7 +2,7 @@ Arranging Music with MATLAB
 ====
 Matlab can be used as an arranger to create musical compositions. It's not as convenient as other arranging software, but it's fun to learn about sound principles in this way. For this purpose, I have written some functions, see utils, starting from the most primitive way to eventually realise a piece of music. You need to follow these steps to do this:
 
-## 1. Get the midi file from your host software.
+## 1. Get the midi file from your DAW.
 Using FL Studio as an example, you can export midi files from Piano Roll. Then use the midi2track function to generate a matrix containing the track information. (Of course, you can also write the matrix manually, but it may be too much trouble).
 
 ## 2. Designing the timbre
