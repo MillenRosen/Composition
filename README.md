@@ -4,7 +4,8 @@ Matlab can be used as an arranger to create musical compositions. It's not as co
 
 ## 1. Get the midi file from your DAW.
 Using FL Studio as an example, you can export midi files from Piano Roll. Then use the `midi2track` function to generate a matrix containing the track information. (Of course, you can also write the matrix manually, but it may be too much trouble).
-<img src="https://github.com/MillenRosen/Composition/assets/153849073/52676245-aa7b-4ac1-8f24-6129f9ec2b8f" width="100px">
+
+<img src="https://github.com/MillenRosen/Composition/assets/153849073/52676245-aa7b-4ac1-8f24-6129f9ec2b8f" width="400px">
 
 ## 2. Designing the timbre
 You can start by writing separate implicit functions to plot the waveform of the sound in one amplitude, and the envelope of the note. The `ADSR1` and `ADSR2` functions are provided to quickly generate the envelopes. Individual notes are then obtained using the `fnote`, `fnote2` and `fnote3` functions. For easy insertion, you can customise the loop to generate the notes of each scale consecutively. Or you can generate noise or fixed pitch notes as drum beats.
