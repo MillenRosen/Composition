@@ -4,7 +4,7 @@ Matlab can be used as an arranger to create musical compositions. It's not as co
 
 ## 1. Get the midi file from your DAW.
 Using FL Studio as an example, you can export midi files from Piano Roll. Then use the `midi2track` function to generate a matrix containing the track information. (Of course, you can also write the matrix manually, but it may be too much trouble).
-![Uploading image.png…]()
+![image](https://github.com/MillenRosen/Composition/assets/153849073/52676245-aa7b-4ac1-8f24-6129f9ec2b8f)
 
 
 ## 2. Designing the timbre
