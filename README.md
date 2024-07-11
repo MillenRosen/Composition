@@ -21,7 +21,7 @@ The soundTrack function makes it easy and quick to insert notes into the timelin
 ## 5. Mixing and effects
 I've also written simple functions for Compressor, Delay, and Equlizer. You can also use the more advanced functions of the Signal Processing Toolbox to make the sound fuller.
 
-In the project I also provided three real time scripts for sound design, reading midi files and actually writing a song. You can refer to them to write your own music.
+In the project I also provided three Matlab live scripts for sound design, reading midi files and actually writing a song. You can refer to them to write your own music.
 
 ### Have fun!
 ### And feel free to contact me! <lity78@mail2.sysu.edu.cn>
