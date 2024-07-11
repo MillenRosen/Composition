@@ -1,6 +1,6 @@
 Arranging Music with MATLAB
 ====
-    Matlab can be used as an arranger to create musical compositions. It's not as convenient as other arranging software, but it's fun to learn about sound principles in this way. For this purpose, I have written some functions, see utils, starting from the most primitive way to eventually realise a piece of music. You need to follow these steps to do this:
+Matlab can be used as an arranger to create musical compositions. It's not as convenient as other arranging software, but it's fun to learn about sound principles in this way. For this purpose, I have written some functions, see utils, starting from the most primitive way to eventually realise a piece of music. You need to follow these steps to do this:
 
 ## 1. Get the midi file from your host software.
 Using FL Studio as an example, you can export midi files from Piano Roll. Then use the midi2track function to generate a matrix containing the track information. (Of course, you can also write the matrix manually, but it may be too much trouble).
@@ -10,9 +10,9 @@ You can start by writing separate implicit functions to plot the waveform of the
 
 ## 3. Determining the tempo of the piece
 This may require a bit of thinking about the relationship between time and beat, but you can also use the tick2time, beat2time functions to convert the corresponding time directly. In order to insert notes later, you need to generate an array of ctime to keep track of the time accumulated for each tick. If the conversion scheme is 1 beat = 60/BPM second = 96 ticks, and if the whole song has a fixed tempo of 120 BPM, then the ctime should be written like this:
-BPM=120*ones(96*4*16); %BPM per tick.
-deltatime=60/96./BPM; %time for each tick
-ctime=cumsum(deltatime); % cumulative time per tick
+        BPM=120*ones(96*4*16); %BPM per tick.
+        deltatime=60/96./BPM; %time for each tick
+        ctime=cumsum(deltatime); % cumulative time per tick
 
 ## 4. Inserting notes into a piece of music
 The soundTrack function makes it easy and quick to insert notes into the timeline, provided you have done all the previous preparations.
