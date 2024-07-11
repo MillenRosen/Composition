@@ -10,7 +10,7 @@ Using FL Studio as an example, you can export midi files from Piano Roll. Then u
 <img src="https://github.com/MillenRosen/Composition/assets/153849073/8fb4d59e-f5a1-4fd5-8db1-20820d65c12c" width="600px">
 
 ## 2. Designing the timbre
-You can start by writing separate implicit functions to plot the waveform of the sound in one amplitude, and the envelope of the note. The `ADSR1` and `ADSR2` functions are provided to quickly generate the envelopes. Individual notes are then obtained using the `fnote`, `fnote2` and `fnote3` functions. For easy insertion, you can customise the loop to generate the notes of each scale consecutively. Or you can generate noise or fixed pitch notes as drum beats.
+You can start by writing implicit functions to plot the waveform of the sound in one amplitude, and the envelope of the note. The `ADSR1` and `ADSR2` functions are provided to quickly generate the envelopes respectively. Individual notes are then obtained using the `fnote`, `fnote2` and `fnote3` functions. For easy insertion, you can customise the loop to generate the notes of each scale consecutively. Or you can generate noise or fixed pitch notes as drum beats.
 
 ## 3. Determining the tempo
 This may require a bit of thinking about the relationship between time and beat, but you can also use the `tick2time`, `beat2time` functions to convert the corresponding time directly. In order to insert notes later, you need to generate an array of ctime to keep track of the time accumulated for each tick. If the conversion scheme is 1 beat = 60/BPM second = 96 ticks, and if the whole song with 4*16 beats has a fixed tempo of 120 BPM, then the ctime should be written like this:
