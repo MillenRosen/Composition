@@ -10,6 +10,7 @@ You can start by writing separate implicit functions to plot the waveform of the
 
 ## 3. Determining the tempo of the piece
 This may require a bit of thinking about the relationship between time and beat, but you can also use the tick2time, beat2time functions to convert the corresponding time directly. In order to insert notes later, you need to generate an array of ctime to keep track of the time accumulated for each tick. If the conversion scheme is 1 beat = 60/BPM second = 96 ticks, and if the whole song has a fixed tempo of 120 BPM, then the ctime should be written like this:
+
         BPM=120*ones(96*4*16); %BPM per tick.
         deltatime=60/96./BPM; %time for each tick
         ctime=cumsum(deltatime); % cumulative time per tick
